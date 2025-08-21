@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>🌐 Intermediate HTML, CSS & JS Project</header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#todo">To-Do</a>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>📌 Quick Notes</h3>
+            <p>Welcome to this project! Here’s what you can do:</p>
+            <ul>
+                <li>✔ Fill in the contact form</li>
+                <li>✔ Add and manage tasks in the To-Do List</li>
+                <li>✔ Explore the responsive layout on different devices</li>
+            </ul>
+            <p style="margin-top:10px; font-style: italic;">Tip: Resize the browser window to see the responsive design
+                in action!</p>
+        </aside>
+        <section class="content">
+            <h2 id="contact">📩 Contact Form</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <span class="error" id="nameError"></span>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <span class="error" id="emailError"></span>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <span class="error" id="messageError"></span>
+                <button type="submit">Submit</button>
+            </form>
+            <hr>
+            <h2 id="todo">📝 To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="todoList"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
